@@ -1,15 +1,24 @@
-const inputOne = document.createElementById("inputOne")
-const inputTwo = document.createElementById("inputTwo")
-const inputThree = document.createElementById("inputThree")
-const inputFour = document.createElementById("inputFour")
-const inputFive = document.createElementById("inputFive")
+const inputOne = document.getElementById("inputOne")
+const inputTwo = document.getElementById("inputTwo")
+const inputThree = document.getElementById("inputThree")
+const inputFour = document.getElementById("inputFour")
+const inputFive = document.getElementById("inputFive")
+
+// let valueOne = inputOne.value
+// let valueTwo = inputTwo.value
+// let valueThree = inputThree.value
+// let valueFour = inputFour.value
+// let valueFive = inputFive.value
 
 const btn = document.getElementById("form-button")
 
-function getAnswers() {
-if (inputOne.value <= 1) {
+function getAnswers(e) {
+  e.preventDefault();
+  console.log(inputThree.value)
+
+if (inputOne.value < 2) {
   console.log("Only one aminal")
-} else if (inputOne.value <= 2) {
+} else if (inputOne.value < 3) {
   console.log("only two babu")
 } else {
   console.log("welp, the world may never know")
@@ -35,19 +44,20 @@ if (inputThree.value === "yes") {
 
 if (inputFour.value === "yes") {
   console.log("Okay")
-} else if (inputFour === "no") {
+} else if (inputFour.value === "no") {
   console.log("oh.")
 } else {
   console.log("why you no choose a simple yes or no???")
 }
 
-if (inputFive === "cake") {
+if (inputFive.value === "cake") {
   console.log("not a risk taker?")
-} else if (inputFive === "death") {
+} else if (inputFive.value === "death") {
   console.log("oooh, that's spicy")
 } else {
   console.log("Not a choice.")
 }
+
 } 
 
-
+btn.addEventListener("click", getAnswers)
