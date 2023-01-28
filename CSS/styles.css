@@ -1,0 +1,9 @@
+li {
+  list-style: none;
+  padding: 1rem;
+}
+
+label {
+  display: block;
+  padding-bottom: .5rem;
+}
