@@ -1,3 +1,55 @@
+body {
+  background-color:hsla(0,100%,50%,1);
+  background-image:
+  radial-gradient(at 18% 40%, hsla(240,100%,71%,1) 0px, transparent 50%),
+  radial-gradient(at 40% 22%, hsla(28,100%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 52% 47%, hsla(352,100%,44%,1) 0px, transparent 50%),
+  radial-gradient(at 82% 30%, hsla(340,100%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 31% 70%, hsla(22,100%,77%,1) 0px, transparent 50%),
+  radial-gradient(at 65% 64%, hsla(240,100%,71%,1) 0px, transparent 50%);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-attachment: fixed;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+#window-container {
+  padding: 2rem;
+}
+
+#window-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+ul {
+  display: block;
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+  padding-left: 0;
+}
+
+input {
+  width: 200px;
+}
+
+#inputOne, #inputThree, #inputFive {
+  background-color: rgba(65, 155, 233, 0.773);
+}
+
+#inputTwo, #inputFour {
+  background-color: rgb(242, 195, 120);
+}
+
+.hidden {
+  display: none;
+}
+
 li {
   list-style: none;
   padding: 1rem;
@@ -6,4 +58,11 @@ li {
 label {
   display: block;
   padding-bottom: .5rem;
+}
+
+#form-button {
+  background-color: rgb(43, 0, 255);
+  color: rgba(255, 255, 255, 0.723);
+  border-radius: 20px;
+  padding: 5px 10px;
 }
